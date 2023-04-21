@@ -56,7 +56,7 @@ TreeNode * minimum(TreeNode * x){
 
   if (x->left == NULL)
   {
-    return x
+    return x;
   }else{
     return minimum(x->left);
   }
