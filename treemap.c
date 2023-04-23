@@ -174,7 +174,7 @@ Pair * nextTreeMap(TreeMap * tree)
   }else{
     TreeNode* father = current->parent;
     
-    while (current != NULL && current == father->right)
+    while (father != NULL && current == father->right)
     {
       current = father;
       father = father->parent;
