@@ -84,3 +84,14 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 ea7aef3
+Sun 23 Apr 2023 02:22:36 AM UTC: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:53:13: error: variable ‘newSon’ set but not used [-Werror=unused-but-set-variable]
+   53 |   TreeNode* newSon = NULL;
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b7c12ca
